@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #ecf2f9;
+    --outer-shadow: 3px 3px 3px #fff, -3px -3px 3px #ceced1;
+    --inner-shadow: inset 3px 3px 3px #fff, inset -3px -3px -3px #ceced1;
+    --color: olive;
+}
+
+body {
+    background-color: var(--bg-color);
+    /* background-image: url(""); */
+}
+
+.message {
+    margin-top: 2rem;
+}
+
+.message i {
+    font-size: 2rem;
+    cursor: pointer;
+    float: right;
+    cursor: var(--color);
+}
+
+header {
+    background-color: var(--bg-color);
+    position: sticky;
+    padding: 1rem;
+    box-shadow: var(--outer-shadow);
+    z-index: 100;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: olive;
+    margin-right: auto;
+}
+
+.navbar {
+    margin-left: 2rem;
+}
+
+a {
+    color: olive;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin: 0 0.5rem;
+}
+
+.cart span {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    top: 10%;
+    font-size: 12px;
+    margin: 0.2rem;
+    margin-left: -0.3rem;
+    border-radius: 50%;
+    background-color: olive;
+    color: #fff;
+}
+
+h3 {
+    text-transform: uppercase;
+    margin: 1rem auto;
+    color: olive;
+    text-align: center;
+}
+.form{
+    position: absolute;
+    top: 30%;
+    left: 25vw;
+    box-shadow: var(--inner-shadow);
+    width: 50%;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--bg-color);
+}
+input,
+select {
+    width: 100%;
+    box-shadow: var(--outer-shadow);
+    background-color: transparent;
+    border-radius: 5px;
+    border: none;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    outline: none;
+    color: olive;
+}
+input:hover{
+    box-shadow: var(--inner-shadow);
+}
+.btn,
+.option-btn,
+.delete-btn{
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: var(--outer-shadow);
+    color: olive;
+    border: none;
+    outline: none;background-color: transparent;
+}
+.delete-btn,
+.option-btn{
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: red;
+    font-weight: bold;
+}
+.option-btn{
+    color: olive;
+}
+a:hover{
+    color: #555;
+}
